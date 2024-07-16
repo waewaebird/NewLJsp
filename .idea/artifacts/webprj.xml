@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webprj">
+    <output-path>$PROJECT_DIR$/out/artifacts/webprj</output-path>
+    <root id="archive" name="webprj.war">
+      <element id="artifact" artifact-name="webprj exploded" />
+    </root>
+  </artifact>
+</component>
