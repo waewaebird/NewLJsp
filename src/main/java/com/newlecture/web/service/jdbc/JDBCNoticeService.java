@@ -12,9 +12,13 @@ import java.util.List;
 
 import com.newlecture.web.entity.Notice;
 import com.newlecture.web.service.NoticeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 
+@Service
 public class JDBCNoticeService implements NoticeService {
 	//private String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
 /*	private String url = "jdbc:mariadb://localhost:3306/newlect";
@@ -22,11 +26,8 @@ public class JDBCNoticeService implements NoticeService {
 	private String pwd = "1234";
 	private String driver = "org.mariadb.jdbc.Driver";*/
 
+	@Autowired
 	private DataSource dataSource;
-
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
 
 	public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException{
 

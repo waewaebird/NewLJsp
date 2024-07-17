@@ -58,7 +58,7 @@
                     <td>
                             ${n.regDate}
                     </td>
-                    <td>${n.git}</td>
+                    <td>${n.hit}</td>
                 </tr>
             </c:forEach>
 
